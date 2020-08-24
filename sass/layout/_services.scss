@@ -1,0 +1,33 @@
+/*услуги*/
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-img {
+  /* margin-bottom: 27px; */
+  width: 370px;
+}
+
+.services-list-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.services {
+  padding-top: 0;
+
+  .subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: $title-dark-theme-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 82px;
+  }
+}

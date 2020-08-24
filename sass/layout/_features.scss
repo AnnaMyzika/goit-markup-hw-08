@@ -1,0 +1,49 @@
+/*особенности*/
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list-img {
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 55px;
+}
+
+.features-list-item .subtitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.features-list-item .description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.features-list-item-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list-item-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $text-light-theme-color;
+}

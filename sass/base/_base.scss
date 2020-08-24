@@ -1,0 +1,50 @@
+body {
+  background-color: #ffffff;
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $text-light-theme-color;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
