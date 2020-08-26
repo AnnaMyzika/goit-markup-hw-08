@@ -421,12 +421,10 @@ img {
 /*шапка-сайта*/
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  margin-right: 85px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -442,8 +440,6 @@ img {
 .header-tel,
 .header-mail {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -485,7 +481,7 @@ img {
 
 .navigation-list-link.current::after {
   position: absolute;
-  bottom: -8px;
+  bottom: -32px;
   left: 0;
   display: block;
   width: 100%;
@@ -505,6 +501,15 @@ img {
     padding-bottom: 10px;
     position: relative;
     border: 1px solid #ececec;
+  }
+  .header-container {
+    justify-content: space-between;
+  }
+  .navigation-list-link,
+  .header-tel,
+  .header-mail {
+    font-size: 18px;
+    line-height: 1.17;
   }
   .menu-btn {
     display: inline-flex;
@@ -554,11 +559,69 @@ img {
   .address-list-item:not(:last-child) {
     margin-bottom: 16px;
   }
+  .navigation-list-link.current::after {
+    bottom: -8px;
+  }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
+  }
+  .menu-wrapper {
+    display: flex;
+  }
+  .navigation-list {
+    display: flex;
+  }
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .navigation-list-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .header-tel,
+  .header-mail {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .address-list {
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    border: 1px solid #ececec;
+  }
+  .header-container {
+    justify-content: center;
+  }
+  .address-list {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    margin-right: 81px;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .address-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .navigation-list-link,
+  .header-tel,
+  .header-mail {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
