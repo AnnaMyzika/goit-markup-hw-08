@@ -2,11 +2,6 @@
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
-}
-
-.customers-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .customers-list-item-svg {
@@ -18,9 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 170px;
   height: 90px;
+
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -36,5 +30,64 @@
   &:hover .customers-list-item-svg,
   &:focus .customers-list-item-svg {
     fill: $accent-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customers-list {
+    flex-wrap: wrap;
+  }
+  .customers-list-item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .customers-list-item-link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers-list {
+    flex-wrap: wrap;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  .customers-list-item-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    justify-content: space-between;
+  }
+
+  .customers-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .customers-list-item-link {
+    width: 170px;
   }
 }
