@@ -1,30 +1,9 @@
 /*особенности*/
 
-.features-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features-list-img {
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  margin-bottom: 55px;
-}
-
-.features-list-item .subtitle {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.features-list-item .description {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.features-list-item-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .features-list-item-svg {
@@ -32,13 +11,14 @@
   height: 70px;
 }
 
-.features-list-item-icon {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
+.features-list-item {
+  .subtitle {
+    margin-bottom: 10px;
+  }
+  .description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .description {
@@ -46,4 +26,61 @@
   font-size: 14px;
   line-height: 1.71;
   color: $text-light-theme-color;
+}
+
+@media screen and (max-width: 767px) {
+  .features-list-item-icon {
+    width: 450px;
+    height: 120px;
+    padding: 25px 190px;
+  }
+
+  .features-list-item {
+    margin-bottom: 30px;
+    .subtitle {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list-item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .features-list-item-icon {
+    width: 354px;
+    height: 120px;
+    padding: 25px 142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .features-list-item-icon {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+  }
 }
