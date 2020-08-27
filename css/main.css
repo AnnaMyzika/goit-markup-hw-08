@@ -782,7 +782,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .features-list-item-icon {
-    max-width: 450px;
+    width: 450px;
     height: 120px;
     padding: 25px 190px;
   }
@@ -834,10 +834,23 @@ img {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
   text-align: center;
+  letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.67;
+  }
 }
 
 /*услуги*/
@@ -951,6 +964,80 @@ img {
 }
 
 /*команда*/
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list-item {
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
+}
+
+.team-list-item-img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.team-list-item-name,
+.team-list-item-position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: #212121;
+  margin-top: 0;
+}
+
+.team-list-item-name {
+  margin-bottom: 10px;
+}
+
+.team-list-item-position {
+  font-weight: 400;
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .team {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .team-list-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-list-item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .team-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 /*клиенты*/
 .customers-list {
   display: flex;
