@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
   .features-list-item-icon {
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     padding: 25px 190px;
   }
