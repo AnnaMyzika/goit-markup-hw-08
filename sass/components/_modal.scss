@@ -11,7 +11,6 @@
 }
 
 .modal-form {
-  width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -189,4 +188,15 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+@media screen and (max-width: 1199px) {
+  .modal-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+  }
 }
