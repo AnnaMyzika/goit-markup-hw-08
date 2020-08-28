@@ -33,6 +33,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 29px;
-  padding-right: 13px;
+  padding: 10px 29px;
+}
+
+.footer-subscription-svg {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscription-btn {
+    margin: auto;
+  }
 }

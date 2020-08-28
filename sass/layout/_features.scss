@@ -1,6 +1,7 @@
 /*особенности*/
 
 .features-list-item-icon {
+  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -30,8 +31,7 @@
 
 @media screen and (max-width: 767px) {
   .features-list-item-icon {
-    width: 450px;
-    height: 120px;
+    max-width: 450px;
     padding: 25px 190px;
   }
 
@@ -62,8 +62,7 @@
   }
 
   .features-list-item-icon {
-    width: 354px;
-    height: 120px;
+    max-width: 354px;
     padding: 25px 142px;
   }
 }
@@ -79,8 +78,7 @@
   }
 
   .features-list-item-icon {
-    width: 270px;
-    height: 120px;
+    max-width: 270px;
     padding: 25px 100px;
   }
 }

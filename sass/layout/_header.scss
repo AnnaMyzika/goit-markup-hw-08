@@ -169,10 +169,9 @@
     padding-bottom: 21px;
     padding-right: 15px;
     padding-left: 15px;
-  }
-
-  .logo {
-    margin-right: 81px;
+    .logo {
+      margin-right: 81px;
+    }
   }
 
   .navigation-list-link {
@@ -208,6 +207,12 @@
     border: 1px solid #ececec;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    .logo {
+      font-size: 26px;
+      line-height: 1.19;
+      margin-right: 85px;
+    }
   }
 
   .header-container {
@@ -216,12 +221,6 @@
 
   .address-list {
     display: flex;
-  }
-
-  .logo {
-    font-size: 26px;
-    line-height: 1.19;
-    margin-right: 85px;
   }
 
   .address-list {
