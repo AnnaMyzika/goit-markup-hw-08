@@ -627,8 +627,8 @@ img {
   }
   .address-list {
     display: flex;
-  }
-  .address-list {
+    justify-content: center;
+    align-items: center;
     margin-left: 305px;
   }
   .address-list-item:not(:last-child) {
@@ -644,7 +644,7 @@ img {
     line-height: 1.14;
   }
   .navigation-list-link.current::after {
-    bottom: -34px;
+    bottom: -44px;
   }
 }
 

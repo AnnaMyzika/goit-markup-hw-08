@@ -221,9 +221,8 @@
 
   .address-list {
     display: flex;
-  }
-
-  .address-list {
+    justify-content: center;
+    align-items: center;
     margin-left: 305px;
   }
 
@@ -243,6 +242,6 @@
   }
 
   .navigation-list-link.current::after {
-    bottom: -34px;
+    bottom: -44px;
   }
 }
