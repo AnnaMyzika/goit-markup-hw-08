@@ -413,9 +413,18 @@ img {
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /*шапка-сайта*/
@@ -495,7 +504,7 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
   }
   .header-container {
     justify-content: space-between;
@@ -640,10 +649,9 @@ img {
 }
 
 /*портфолио*/
+/*кнопки*/
 .portfolio-filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 .portfolio-filter-list-item:not(:last-child) {
@@ -670,26 +678,7 @@ img {
   outline: none;
 }
 
-.portfolio-gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio-gallery-list-item {
-  /* width: 370px; */
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio-gallery-list-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-gallery-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
+/*галерея*/
 .portfolio-gallery-list-item-link {
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -752,6 +741,65 @@ img {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-filter-list {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .portfolio-filter-list-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  .portfolio-gallery-list-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-filter-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .portfolio-gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-gallery-list-item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .portfolio-gallery-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio-gallery-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .portfolio-gallery-list-item:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-filter-list {
+    margin-bottom: 50px;
+  }
+  .portfolio-gallery-list-item {
+    /* width: 370px; */
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .portfolio-gallery-list-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio-gallery-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 /*кнопка героя и модалки*/
@@ -976,8 +1024,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container,
-  .footer-coordinates-invitation {
+  .footer .container,
+  .footer .footer-coordinates-invitation {
     display: flex;
     justify-content: center;
     align-items: center;

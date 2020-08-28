@@ -413,9 +413,18 @@ img {
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /*шапка-сайта*/
@@ -495,7 +504,7 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
   }
   .header-container {
     justify-content: space-between;
@@ -1233,8 +1242,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container,
-  .footer-coordinates-invitation {
+  .footer .container,
+  .footer .footer-coordinates-invitation {
     display: flex;
     justify-content: center;
     align-items: center;
